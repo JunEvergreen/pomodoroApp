@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pomodoro Timer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pomodoro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" class="ion-padding">
+
+    <div class="timer-tomato">
+      <img src="assets/tomato.png" alt="Tomato" />
+      <h1 id="timer-display">25:00</h1>
+    </div>
+
+    <p>Time remaining</p>
+
+    <div class="button-container">
+      <ion-button expand="full" color="primary" id="start-stop-button">
+        Start
+      </ion-button>
+    </div>
+
+    <div class="pomodoro-cycle">
+      <ion-text>
+        <p>Cycles Completed: <strong>0</strong></p>
+      </ion-text>
+    </div>
+
+    <div class="break-container">
+      <ion-text color="secondary">
+        <p>Break Time: 5:00</p>
+      </ion-text>
+    </div>
+
+  </div>
+</ion-content>
